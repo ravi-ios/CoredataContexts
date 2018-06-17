@@ -49,6 +49,10 @@ public class Repository: NSManagedObject {
         
         if self.size > 0 {
             // bandwidth:𝐵 𝑡 =10000 bits/s∙ (1−𝑒^(-t/3))
+            /*
+             *  If I solve the exponential equation, I can plot the graph but I do not know how this graph helps me to find estimated time.
+             * 
+             */
             self.estimatedDownloadTime = (size * 8 * 1024)/10000
         }
         
