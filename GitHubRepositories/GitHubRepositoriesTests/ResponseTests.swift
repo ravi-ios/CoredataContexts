@@ -9,26 +9,25 @@
 import XCTest
 @testable import GitHubRepositories
 
-class ResponseTests: XCTestCase {
+class ResponseTests: BaseTests {
     
-    var fileUrl: URL?
 
     override func setUp() {
         super.setUp()
-        fileUrl = Bundle(for: type(of: self)).url(forResource: "Sample", withExtension: "json")
+        
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testPerformanceExample() {
+    override func testPerformanceExample() {
         self.measure {
         }
     }
     
     func testResponse() {
-        guard let url = fileUrl, let data = try? Data(contentsOf: url) else {
+        guard let url = self.fileUrl, let data = try? Data(contentsOf: url) else {
             XCTFail("data should exist for contents of url")
             return
         }

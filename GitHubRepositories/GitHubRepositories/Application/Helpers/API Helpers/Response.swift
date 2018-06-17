@@ -30,6 +30,14 @@ extension Response {
             
             objects.removeAll()
             objects.append(contentsOf: items)
+            
+            for dict in items {
+                if let repository = CoreDataManager.shared.createManagedObject(forentity: Repository.entityName) as? Repository {
+                    repository.configureWith(dict)
+                }
+            }
+            
+            CoreDataManager.shared.saveContext()
         } catch let error {
             self.error = error
             fatalError("Parsing Error: \(error.localizedDescription)")
