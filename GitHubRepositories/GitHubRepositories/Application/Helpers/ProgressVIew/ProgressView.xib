@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgressView" customModule="GitHubRepositories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmp-0" translatesAutoresizingMaskIntoConstraints="NO" id="QrP-qB-Kvj">
+                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="G3i-Rp-qd3"/>
+                        <constraint firstAttribute="height" constant="100" id="tYH-HG-LLL"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QrP-qB-Kvj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3zZ-OA-rR3"/>
+                <constraint firstItem="QrP-qB-Kvj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MKT-ie-VDo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="progressIndicator" destination="QrP-qB-Kvj" id="uHe-Sz-Ycv"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="tmp-0" width="256" height="256"/>
+    </resources>
+</document>

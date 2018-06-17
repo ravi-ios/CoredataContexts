@@ -75,7 +75,11 @@ class RepositoriesViewController: UIViewController {
     }
     
     fileprivate func fetchData(_ pageIndex: UInt?, query: String?) {
+        self.view.endEditing(true)
+        ProgressView.shared.show()
         ServiceManager.fetchServiceData(pageIndex, query: query) { (data, error) in
+            ProgressView.shared.hide()
+
             if let errorMessage = error?.localizedDescription {
                 UIAlertController.showAlertWith(errorMessage, sender: self)
             }

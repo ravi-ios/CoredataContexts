@@ -32,6 +32,8 @@
 		4139BF9220D685FB00A75491 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF9120D685FB00A75491 /* BaseTests.swift */; };
 		4139BF9520D6A3BE00A75491 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF9320D6A3BE00A75491 /* RepositoryCell.swift */; };
 		4139BF9620D6A3BE00A75491 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF9420D6A3BE00A75491 /* RepositoryCell.xib */; };
+		4139BF9920D6D35C00A75491 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF9820D6D35C00A75491 /* ProgressView.swift */; };
+		4139BF9B20D6D3A200A75491 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF9A20D6D3A200A75491 /* ProgressView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		4139BF9120D685FB00A75491 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		4139BF9320D6A3BE00A75491 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 		4139BF9420D6A3BE00A75491 /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		4139BF9820D6D35C00A75491 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		4139BF9A20D6D3A200A75491 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +174,6 @@
 			children = (
 				4139BF6120D65C4900A75491 /* CoreData */,
 				4139BF6020D65C2D00A75491 /* Helpers */,
-				4139BF5F20D65C1D00A75491 /* Models */,
 				4139BF5E20D65BED00A75491 /* ViewControllers */,
 				4139BF5D20D65BDB00A75491 /* Views */,
 			);
@@ -194,16 +197,10 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		4139BF5F20D65C1D00A75491 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		4139BF6020D65C2D00A75491 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4139BF9720D6D32600A75491 /* ProgressVIew */,
 				4139BF7520D66E9000A75491 /* AlertController */,
 				4139BF6420D65F8200A75491 /* API Helpers */,
 			);
@@ -255,6 +252,15 @@
 				4139BF7620D66EAD00A75491 /* UIAlertController.swift */,
 			);
 			path = AlertController;
+			sourceTree = "<group>";
+		};
+		4139BF9720D6D32600A75491 /* ProgressVIew */ = {
+			isa = PBXGroup;
+			children = (
+				4139BF9820D6D35C00A75491 /* ProgressView.swift */,
+				4139BF9A20D6D3A200A75491 /* ProgressView.xib */,
+			);
+			path = ProgressVIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +370,7 @@
 				4139BF3920D6599400A75491 /* LaunchScreen.storyboard in Resources */,
 				4139BF6820D660E300A75491 /* Sample.json in Resources */,
 				4139BF3620D6599400A75491 /* Assets.xcassets in Resources */,
+				4139BF9B20D6D3A200A75491 /* ProgressView.xib in Resources */,
 				4139BF9620D6A3BE00A75491 /* RepositoryCell.xib in Resources */,
 				4139BF3420D6599300A75491 /* Main.storyboard in Resources */,
 			);
@@ -402,6 +409,7 @@
 				4139BF9520D6A3BE00A75491 /* RepositoryCell.swift in Sources */,
 				4139BF2F20D6599300A75491 /* AppDelegate.swift in Sources */,
 				4139BF6620D65FEB00A75491 /* ServiceManager.swift in Sources */,
+				4139BF9920D6D35C00A75491 /* ProgressView.swift in Sources */,
 				4139BF7720D66EAD00A75491 /* UIAlertController.swift in Sources */,
 				4139BF6E20D661B000A75491 /* Response.swift in Sources */,
 			);
