@@ -22,6 +22,11 @@
 		4139BF7220D66A0C00A75491 /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7120D66A0C00A75491 /* RequestTests.swift */; };
 		4139BF7420D66BD200A75491 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7320D66BD200A75491 /* ResponseTests.swift */; };
 		4139BF7720D66EAD00A75491 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7620D66EAD00A75491 /* UIAlertController.swift */; };
+		4139BF7A20D672A500A75491 /* RepositoryInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7820D672A500A75491 /* RepositoryInfo.xcdatamodeld */; };
+		4139BF8720D675C000A75491 /* Owner+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF8320D675C000A75491 /* Owner+CoreDataClass.swift */; };
+		4139BF8820D675C000A75491 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF8420D675C000A75491 /* Owner+CoreDataProperties.swift */; };
+		4139BF8920D675C000A75491 /* Repository+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF8520D675C000A75491 /* Repository+CoreDataClass.swift */; };
+		4139BF8A20D675C000A75491 /* Repository+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF8620D675C000A75491 /* Repository+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,11 @@
 		4139BF7120D66A0C00A75491 /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
 		4139BF7320D66BD200A75491 /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
 		4139BF7620D66EAD00A75491 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		4139BF7920D672A500A75491 /* RepositoryInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RepositoryInfo.xcdatamodel; sourceTree = "<group>"; };
+		4139BF8320D675C000A75491 /* Owner+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4139BF8420D675C000A75491 /* Owner+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4139BF8520D675C000A75491 /* Repository+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4139BF8620D675C000A75491 /* Repository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +208,10 @@
 		4139BF6220D65C5800A75491 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4139BF8320D675C000A75491 /* Owner+CoreDataClass.swift */,
+				4139BF8420D675C000A75491 /* Owner+CoreDataProperties.swift */,
+				4139BF8520D675C000A75491 /* Repository+CoreDataClass.swift */,
+				4139BF8620D675C000A75491 /* Repository+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +219,7 @@
 		4139BF6320D65C6100A75491 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4139BF7820D672A500A75491 /* RepositoryInfo.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -360,8 +375,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4139BF8820D675C000A75491 /* Owner+CoreDataProperties.swift in Sources */,
 				4139BF3120D6599300A75491 /* RepositoriesViewController.swift in Sources */,
+				4139BF7A20D672A500A75491 /* RepositoryInfo.xcdatamodeld in Sources */,
 				4139BF6B20D6616700A75491 /* Request.swift in Sources */,
+				4139BF8720D675C000A75491 /* Owner+CoreDataClass.swift in Sources */,
+				4139BF8920D675C000A75491 /* Repository+CoreDataClass.swift in Sources */,
+				4139BF8A20D675C000A75491 /* Repository+CoreDataProperties.swift in Sources */,
 				4139BF2F20D6599300A75491 /* AppDelegate.swift in Sources */,
 				4139BF6620D65FEB00A75491 /* ServiceManager.swift in Sources */,
 				4139BF7720D66EAD00A75491 /* UIAlertController.swift in Sources */,
@@ -690,6 +710,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4139BF7820D672A500A75491 /* RepositoryInfo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4139BF7920D672A500A75491 /* RepositoryInfo.xcdatamodel */,
+			);
+			currentVersion = 4139BF7920D672A500A75491 /* RepositoryInfo.xcdatamodel */;
+			path = RepositoryInfo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4139BF2320D6599300A75491 /* Project object */;
 }
