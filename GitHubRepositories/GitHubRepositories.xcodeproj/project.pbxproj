@@ -14,6 +14,14 @@
 		4139BF3920D6599400A75491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF3720D6599400A75491 /* LaunchScreen.storyboard */; };
 		4139BF4420D6599400A75491 /* GitHubRepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF4320D6599400A75491 /* GitHubRepositoriesTests.swift */; };
 		4139BF4F20D6599400A75491 /* GitHubRepositoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF4E20D6599400A75491 /* GitHubRepositoriesUITests.swift */; };
+		4139BF6620D65FEB00A75491 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF6520D65FEB00A75491 /* ServiceManager.swift */; };
+		4139BF6820D660E300A75491 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF6720D660E300A75491 /* Sample.json */; };
+		4139BF6920D660E300A75491 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF6720D660E300A75491 /* Sample.json */; };
+		4139BF6B20D6616700A75491 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF6A20D6616700A75491 /* Request.swift */; };
+		4139BF6E20D661B000A75491 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF6D20D661B000A75491 /* Response.swift */; };
+		4139BF7220D66A0C00A75491 /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7120D66A0C00A75491 /* RequestTests.swift */; };
+		4139BF7420D66BD200A75491 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7320D66BD200A75491 /* ResponseTests.swift */; };
+		4139BF7720D66EAD00A75491 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF7620D66EAD00A75491 /* UIAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,13 @@
 		4139BF4A20D6599400A75491 /* GitHubRepositoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubRepositoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4139BF4E20D6599400A75491 /* GitHubRepositoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepositoriesUITests.swift; sourceTree = "<group>"; };
 		4139BF5020D6599400A75491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4139BF6520D65FEB00A75491 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		4139BF6720D660E300A75491 /* Sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
+		4139BF6A20D6616700A75491 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4139BF6D20D661B000A75491 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4139BF7120D66A0C00A75491 /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
+		4139BF7320D66BD200A75491 /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
+		4139BF7620D66EAD00A75491 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				4139BF4320D6599400A75491 /* GitHubRepositoriesTests.swift */,
+				4139BF7120D66A0C00A75491 /* RequestTests.swift */,
 				4139BF4520D6599400A75491 /* Info.plist */,
+				4139BF6720D660E300A75491 /* Sample.json */,
+				4139BF7320D66BD200A75491 /* ResponseTests.swift */,
 			);
 			path = GitHubRepositoriesTests;
 			sourceTree = "<group>";
@@ -162,6 +180,8 @@
 		4139BF6020D65C2D00A75491 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4139BF7520D66E9000A75491 /* AlertController */,
+				4139BF6420D65F8200A75491 /* API Helpers */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -187,6 +207,24 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4139BF6420D65F8200A75491 /* API Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4139BF6520D65FEB00A75491 /* ServiceManager.swift */,
+				4139BF6A20D6616700A75491 /* Request.swift */,
+				4139BF6D20D661B000A75491 /* Response.swift */,
+			);
+			path = "API Helpers";
+			sourceTree = "<group>";
+		};
+		4139BF7520D66E9000A75491 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				4139BF7620D66EAD00A75491 /* UIAlertController.swift */,
+			);
+			path = AlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4139BF3920D6599400A75491 /* LaunchScreen.storyboard in Resources */,
+				4139BF6820D660E300A75491 /* Sample.json in Resources */,
 				4139BF3620D6599400A75491 /* Assets.xcassets in Resources */,
 				4139BF3420D6599300A75491 /* Main.storyboard in Resources */,
 			);
@@ -303,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4139BF6920D660E300A75491 /* Sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4139BF3120D6599300A75491 /* RepositoriesViewController.swift in Sources */,
+				4139BF6B20D6616700A75491 /* Request.swift in Sources */,
 				4139BF2F20D6599300A75491 /* AppDelegate.swift in Sources */,
+				4139BF6620D65FEB00A75491 /* ServiceManager.swift in Sources */,
+				4139BF7720D66EAD00A75491 /* UIAlertController.swift in Sources */,
+				4139BF6E20D661B000A75491 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +374,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4139BF4420D6599400A75491 /* GitHubRepositoriesTests.swift in Sources */,
+				4139BF7420D66BD200A75491 /* ResponseTests.swift in Sources */,
+				4139BF7220D66A0C00A75491 /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
