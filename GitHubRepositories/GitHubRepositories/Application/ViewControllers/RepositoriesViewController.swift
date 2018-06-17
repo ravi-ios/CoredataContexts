@@ -11,7 +11,9 @@ import UIKit
 import CoreData
 
 class RepositoriesViewController: UIViewController {
-
+    
+    @IBOutlet weak var searchField: UITextField!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var pageIndex: UInt = 0
@@ -39,7 +41,7 @@ class RepositoriesViewController: UIViewController {
         super.viewDidLoad()
         self.configureInitialSetup()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -48,15 +50,21 @@ class RepositoriesViewController: UIViewController {
         self.title = "Repositories"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
+        self.searchField.layer.cornerRadius = 5.0
+        self.searchField.layer.borderColor = UIColor.darkGray.cgColor
+        self.searchField.layer.borderWidth = 2.0
+        
+        searchField.text = query
+        
         // Register cell
         self.collectionView!.register(UINib(nibName: "RepositoryCell", bundle: nil), forCellWithReuseIdentifier: RepositoryCell.cellIdentifier)
-
+        
         // Assign Delegate and Datasource
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
         // Fetch data from Server
-        self.fetchData(pageIndex, query: query)
+        self.fetchData(pageIndex, query: searchField.text)
         
         // Fetch data from coredata
         do {
@@ -74,6 +82,18 @@ class RepositoriesViewController: UIViewController {
         }
     }
     
+    @IBAction func searchRepositories(_ sender: Any) {
+        if searchField.text?.count == 0 {
+          searchField.text = query
+        }
+        
+        if query == searchField.text {
+            pageIndex = pageIndex + 1
+        } else {
+            pageIndex = 0
+        }
+        self.fetchData(pageIndex, query: searchField.text)
+    }
     deinit {
         for operation in self.blockOperation {
             operation.cancel()
@@ -109,7 +129,7 @@ extension RepositoriesViewController: UICollectionViewDelegate, UICollectionView
         
         if indexPath.row + 2 == count {
             pageIndex = pageIndex + 1
-            self.fetchData(pageIndex, query: query)
+            self.fetchData(pageIndex, query: searchField.text)
         }
     }
     
@@ -150,5 +170,12 @@ extension RepositoriesViewController: NSFetchedResultsControllerDelegate {
         }) { (status) in
             self.blockOperation.removeAll()
         }
+    }
+}
+
+extension RepositoriesViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

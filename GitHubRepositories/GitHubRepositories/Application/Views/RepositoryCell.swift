@@ -27,8 +27,7 @@ class RepositoryCell: UICollectionViewCell {
     func configure(_ data: Repository?) {
         
         if data?.hasWiki ?? false {
-            self.backView.backgroundColor = UIColor(red:0.03, green:0.47, blue:0.18, alpha:0.4)
-            
+            self.backView.backgroundColor = UIColor(red:0.00, green:0.44, blue:0.70, alpha:0.30)
         } else {
             self.backView.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:0.1)
         }
