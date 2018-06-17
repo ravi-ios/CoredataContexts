@@ -94,6 +94,7 @@ class RepositoriesViewController: UIViewController {
         }
         self.fetchData(pageIndex, query: searchField.text)
     }
+    
     deinit {
         for operation in self.blockOperation {
             operation.cancel()
