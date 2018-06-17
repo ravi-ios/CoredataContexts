@@ -48,10 +48,10 @@ class RepositoryCell: UICollectionViewCell {
                 estimatedDownloadTimeLabel.text = ("Estimated download time: \(time) sec")
                 
             } else if time < 3600 {
-                estimatedDownloadTimeLabel.text = ("Estimated download time: \(String(format: "%.0f", Float(time) / 60.0)) min")
+                estimatedDownloadTimeLabel.text = ("Estimated download time: \(String(format: "%.1f", Float(time) / 60.0)) min")
                 
             } else {
-                estimatedDownloadTimeLabel.text = ("Estimated download time: \(String(format: "%.0f", Float(time) / 3600.0)) hr")
+                estimatedDownloadTimeLabel.text = ("Estimated download time: \(String(format: "%.1f", Float(time) / 3600.0)) hr")
             }
         }
     }
