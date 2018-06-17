@@ -30,6 +30,8 @@
 		4139BF8E20D67E7A00A75491 /* Repository+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF8D20D67E7A00A75491 /* Repository+CoreDataProperties.swift */; };
 		4139BF9020D6855800A75491 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF8F20D6855800A75491 /* CoreDataManagerTests.swift */; };
 		4139BF9220D685FB00A75491 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF9120D685FB00A75491 /* BaseTests.swift */; };
+		4139BF9520D6A3BE00A75491 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF9320D6A3BE00A75491 /* RepositoryCell.swift */; };
+		4139BF9620D6A3BE00A75491 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF9420D6A3BE00A75491 /* RepositoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		4139BF8D20D67E7A00A75491 /* Repository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4139BF8F20D6855800A75491 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
 		4139BF9120D685FB00A75491 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
+		4139BF9320D6A3BE00A75491 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		4139BF9420D6A3BE00A75491 /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 		4139BF5D20D65BDB00A75491 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4139BF9320D6A3BE00A75491 /* RepositoryCell.swift */,
+				4139BF9420D6A3BE00A75491 /* RepositoryCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 				4139BF3920D6599400A75491 /* LaunchScreen.storyboard in Resources */,
 				4139BF6820D660E300A75491 /* Sample.json in Resources */,
 				4139BF3620D6599400A75491 /* Assets.xcassets in Resources */,
+				4139BF9620D6A3BE00A75491 /* RepositoryCell.xib in Resources */,
 				4139BF3420D6599300A75491 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +399,7 @@
 				4139BF8720D675C000A75491 /* Owner+CoreDataClass.swift in Sources */,
 				4139BF8920D675C000A75491 /* Repository+CoreDataClass.swift in Sources */,
 				4139BF8C20D677F200A75491 /* CoreDataManager.swift in Sources */,
+				4139BF9520D6A3BE00A75491 /* RepositoryCell.swift in Sources */,
 				4139BF2F20D6599300A75491 /* AppDelegate.swift in Sources */,
 				4139BF6620D65FEB00A75491 /* ServiceManager.swift in Sources */,
 				4139BF7720D66EAD00A75491 /* UIAlertController.swift in Sources */,
