@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4139BF2F20D6599300A75491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF2E20D6599300A75491 /* AppDelegate.swift */; };
-		4139BF3120D6599300A75491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF3020D6599300A75491 /* ViewController.swift */; };
+		4139BF3120D6599300A75491 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139BF3020D6599300A75491 /* RepositoriesViewController.swift */; };
 		4139BF3420D6599300A75491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF3220D6599300A75491 /* Main.storyboard */; };
 		4139BF3620D6599400A75491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF3520D6599400A75491 /* Assets.xcassets */; };
 		4139BF3920D6599400A75491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4139BF3720D6599400A75491 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		4139BF2B20D6599300A75491 /* GitHubRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4139BF2E20D6599300A75491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4139BF3020D6599300A75491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4139BF3020D6599300A75491 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		4139BF3320D6599300A75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4139BF3520D6599400A75491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4139BF3820D6599400A75491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		4139BF2D20D6599300A75491 /* GitHubRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				4139BF5C20D65BCB00A75491 /* Application */,
 				4139BF2E20D6599300A75491 /* AppDelegate.swift */,
-				4139BF3020D6599300A75491 /* ViewController.swift */,
 				4139BF3220D6599300A75491 /* Main.storyboard */,
 				4139BF3520D6599400A75491 /* Assets.xcassets */,
 				4139BF3720D6599400A75491 /* LaunchScreen.storyboard */,
@@ -123,6 +123,70 @@
 				4139BF5020D6599400A75491 /* Info.plist */,
 			);
 			path = GitHubRepositoriesUITests;
+			sourceTree = "<group>";
+		};
+		4139BF5C20D65BCB00A75491 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4139BF6120D65C4900A75491 /* CoreData */,
+				4139BF6020D65C2D00A75491 /* Helpers */,
+				4139BF5F20D65C1D00A75491 /* Models */,
+				4139BF5E20D65BED00A75491 /* ViewControllers */,
+				4139BF5D20D65BDB00A75491 /* Views */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4139BF5D20D65BDB00A75491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4139BF5E20D65BED00A75491 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4139BF3020D6599300A75491 /* RepositoriesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4139BF5F20D65C1D00A75491 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4139BF6020D65C2D00A75491 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4139BF6120D65C4900A75491 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4139BF6320D65C6100A75491 /* Resources */,
+				4139BF6220D65C5800A75491 /* Models */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4139BF6220D65C5800A75491 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4139BF6320D65C6100A75491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4139BF3120D6599300A75491 /* ViewController.swift in Sources */,
+				4139BF3120D6599300A75491 /* RepositoriesViewController.swift in Sources */,
 				4139BF2F20D6599300A75491 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
